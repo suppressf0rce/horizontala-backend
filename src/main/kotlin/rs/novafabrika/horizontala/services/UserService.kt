@@ -45,6 +45,7 @@ class UserService {
             passwordEncoder.encode(userDto.password),
             userDto.email,
             userDto.fullName,
+            userDto.iconPath,
             userDto.dateOfBirth
         )
         return UserDto(userRepository.save(user))
@@ -64,6 +65,7 @@ class UserService {
         user.get().email = userDto.email
         user.get().password = passwordEncoder.encode(userDto.password)
         user.get().fullName = userDto.fullName
+        user.get().fullName = userDto.iconPath
         user.get().dateOfBirth = userDto.dateOfBirth
 
         return UserDto(userRepository.save(user.get()))

@@ -16,6 +16,8 @@ data class User(
 
     var fullName: String,
 
+    var iconPath: String,
+
     @Column(unique = true)
     var email: String,
 

@@ -9,6 +9,7 @@ class UserDto() {
         username = user.username
         email = user.email
         id = user.id
+        iconPath = user.iconPath
         createdAt = user.createdAt
         updatedAt = user.updatedAt
         fullName = user.fullName
@@ -18,6 +19,7 @@ class UserDto() {
     lateinit var username: String
     lateinit var email: String
     lateinit var fullName: String
+    lateinit var iconPath: String
 
     lateinit var createdAt: Date
     lateinit var updatedAt: Date

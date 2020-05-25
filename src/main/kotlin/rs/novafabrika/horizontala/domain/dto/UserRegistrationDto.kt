@@ -9,6 +9,7 @@ class UserRegistrationDto() {
     lateinit var password: String
     lateinit var email: String
     lateinit var fullName: String
+    lateinit var iconPath: String
     var companyId by Delegates.notNull<Long>()
 
     var dateOfBirth: Date? = null
